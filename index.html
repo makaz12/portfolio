@@ -90,23 +90,54 @@
       <section class="section" id="showcase">
         <div class="section-heading">
           <p class="eyebrow">Showcase</p>
-          <h2>Elevator Pitch</h2>
+          <h2>Featured media and presentation work</h2>
         </div>
 
-        <article class="showcase-card showcase-card-compact">
-          <div class="showcase-copy">
-            <p class="showcase-label">Featured Video</p>
-            <h3>Short introduction video</h3>
-            <p>
-              A brief video introduction that presents who I am, what I am building, and the
-              direction I want to keep growing in as a developer.
-            </p>
-          </div>
-          <video class="showcase-video" controls preload="metadata">
-            <source src="image/elevator-pitch.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </article>
+        <div class="showcase-grid">
+          <article class="showcase-card showcase-card-compact">
+            <div class="showcase-copy">
+              <p class="showcase-label">Featured Video</p>
+              <h3>Short introduction video</h3>
+              <p>
+                A brief video introduction that presents who I am, what I am building, and the
+                direction I want to keep growing in as a developer.
+              </p>
+            </div>
+            <video class="showcase-video" controls preload="metadata">
+              <source src="image/elevator-pitch.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </article>
+
+          <article class="showcase-card">
+            <div class="showcase-copy">
+              <p class="showcase-label">JUnit 5 Presentation</p>
+              <h3>Testing Code with JUnit 5</h3>
+              <p>
+                A presentation focused on unit testing with JUnit 5, covering the value of testing
+                Java code and presenting core ideas in a structured visual format.
+              </p>
+            </div>
+
+            <img
+              class="showcase-preview"
+              src="image/unit-testing-preview.png"
+              alt="Preview slide from the Testing Code with JUnit 5 presentation"
+            >
+
+            <div class="showcase-actions">
+              <a class="button button-primary" href="image/unit-testing.pptx" target="_blank" rel="noreferrer">View Presentation</a>
+              <a class="button button-secondary" href="image/unit-testing.pptx" download>Download PPTX</a>
+            </div>
+
+            <object class="showcase-embed" data="image/unit-testing.pptx" type="application/vnd.openxmlformats-officedocument.presentationml.presentation">
+              <p>
+                Your browser may not preview PowerPoint files directly.
+                <a href="image/unit-testing.pptx" download>Download the presentation here.</a>
+              </p>
+            </object>
+          </article>
+        </div>
       </section>
 
       <section class="section" id="projects">
