@@ -296,6 +296,37 @@ h3 {
   font-size: 0.78rem;
 }
 
+.project-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.project-live-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(232, 214, 167, 0.32);
+  background: rgba(232, 214, 167, 0.14);
+  color: var(--accent);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.project-live-link:hover,
+.project-live-link:focus-visible {
+  transform: translateY(-1px);
+  background: rgba(232, 214, 167, 0.24);
+  border-color: rgba(232, 214, 167, 0.55);
+  color: var(--accent-strong);
+}
+
 .project-footer {
   display: flex;
   flex-wrap: wrap;
@@ -310,20 +341,42 @@ h3 {
   margin-top: 1.25rem;
 }
 
+.project-shot-link {
+  display: block;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-shot-link:hover,
+.project-shot-link:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(232, 214, 167, 0.45);
+}
+
 .project-shots img {
   width: 100%;
   height: 220px;
   object-fit: cover;
   object-position: top center;
-  border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.04);
+  display: block;
 }
 
-.project-card:not(.project-card-featured) .project-shots img {
-  height: 250px;
+.project-card-code .project-shots img {
+  height: 230px;
   object-fit: contain;
-  padding: 0.5rem;
+  padding: 0.1rem;
+  background: #111213;
+}
+
+.project-card-ui .project-shots img {
+  height: 230px;
+  object-fit: cover;
+  object-position: center top;
+  padding: 0;
+  background: transparent;
 }
 
 .contact-card {
@@ -426,6 +479,52 @@ h3 {
   transition: color 0.2s ease;
 }
 
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: none;
+}
+
+.lightbox:target {
+  display: grid;
+  place-items: center;
+}
+
+.lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.lightbox-content {
+  position: relative;
+  z-index: 1;
+  width: min(92vw, 1100px);
+  margin: 0;
+  padding: 1rem;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(15, 15, 15, 0.92);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.45);
+}
+
+.lightbox-content img {
+  display: block;
+  width: 100%;
+  max-height: 82vh;
+  object-fit: contain;
+  border-radius: 16px;
+  background: #0c0c0d;
+}
+
+.lightbox-close {
+  display: inline-flex;
+  margin-top: 0.9rem;
+  color: var(--accent);
+  font-family: "Space Grotesk", sans-serif;
+}
+
 @media (max-width: 960px) {
   .hero,
   .about-grid,
@@ -476,5 +575,10 @@ h3 {
 
   .project-shots {
     grid-template-columns: 1fr;
+  }
+
+  .project-title-row {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }

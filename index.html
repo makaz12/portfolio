@@ -130,12 +130,6 @@
               <a class="button button-secondary" href="image/unit-testing.pptx" download>Download PPTX</a>
             </div>
 
-            <object class="showcase-embed" data="image/unit-testing.pptx" type="application/vnd.openxmlformats-officedocument.presentationml.presentation">
-              <p>
-                Your browser may not preview PowerPoint files directly.
-                <a href="image/unit-testing.pptx" download>Download the presentation here.</a>
-              </p>
-            </object>
           </article>
         </div>
       </section>
@@ -167,12 +161,16 @@
               <span>Service Platform UI</span>
             </div>
             <div class="project-shots">
-              <img src="image/fixnow-home.png" alt="FixNow homepage screenshot">
-              <img src="image/fixnow-contact.png" alt="FixNow contact page screenshot">
+              <a class="project-shot-link" href="#lightbox-fixnow-home">
+                <img src="image/fixnow-home.png" alt="FixNow homepage screenshot">
+              </a>
+              <a class="project-shot-link" href="#lightbox-fixnow-contact">
+                <img src="image/fixnow-contact.png" alt="FixNow contact page screenshot">
+              </a>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card project-card-code">
             <p class="project-type">Java Application</p>
             <h3>Form App</h3>
             <p>
@@ -192,23 +190,43 @@
               <span>Application Logic</span>
             </div>
             <div class="project-shots">
-              <img src="image/formapp-code-1.png" alt="Form App Java code screenshot showing form model logic">
-              <img src="image/formapp-code-2.png" alt="Form App Java code screenshot showing constructors and validation logic">
+              <a class="project-shot-link" href="#lightbox-formapp-code-1">
+                <img src="image/formapp-code-1.png" alt="Form App Java code screenshot showing form model logic">
+              </a>
+              <a class="project-shot-link" href="#lightbox-formapp-code-2">
+                <img src="image/formapp-code-2.png" alt="Form App Java code screenshot showing constructors and validation logic">
+              </a>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card project-card-ui">
             <p class="project-type">JavaScript Project</p>
-            <h3>Banking App</h3>
+            <div class="project-title-row">
+              <h3>Expense Tracker App</h3>
+              <a class="project-live-link" href="https://makaz12.github.io/Expense-Tracker/" target="_blank" rel="noreferrer">Visit Website</a>
+            </div>
             <p>
-              A JavaScript banking application focused on simulating everyday account interactions
-              such as viewing balances, tracking transactions, and managing basic financial actions.
-              It reflects my interest in writing interactive logic for practical, user-facing tools.
+              A JavaScript expense tracker application built to help users monitor their balance,
+              organize transactions, and keep a clearer view of income and expenses through a simple
+              dashboard interface.
+            </p>
+            <p>
+              The screenshots highlight the balance overview, transaction list, and transaction
+              entry form, showing my work on layout structure and the user flow for personal
+              finance tracking.
             </p>
             <div class="project-footer">
               <span>JavaScript</span>
-              <span>Dynamic Interface</span>
+              <span>Expense Tracking UI</span>
               <span>Application State</span>
+            </div>
+            <div class="project-shots">
+              <a class="project-shot-link" href="#lightbox-expense-tracker-1">
+                <img src="image/expense-tracker-1.png" alt="Expense Tracker dashboard screenshot">
+              </a>
+              <a class="project-shot-link" href="#lightbox-expense-tracker-2">
+                <img src="image/expense-tracker-2.png" alt="Expense Tracker transactions screenshot">
+              </a>
             </div>
           </article>
         </div>
@@ -266,6 +284,54 @@
         </div>
       </section>
     </main>
+  </div>
+
+  <div class="lightbox" id="lightbox-fixnow-home">
+    <a class="lightbox-backdrop" href="#projects" aria-label="Close enlarged image"></a>
+    <figure class="lightbox-content">
+      <img src="image/fixnow-home.png" alt="FixNow homepage screenshot enlarged">
+      <a class="lightbox-close" href="#projects">Close</a>
+    </figure>
+  </div>
+
+  <div class="lightbox" id="lightbox-fixnow-contact">
+    <a class="lightbox-backdrop" href="#projects" aria-label="Close enlarged image"></a>
+    <figure class="lightbox-content">
+      <img src="image/fixnow-contact.png" alt="FixNow contact page screenshot enlarged">
+      <a class="lightbox-close" href="#projects">Close</a>
+    </figure>
+  </div>
+
+  <div class="lightbox" id="lightbox-formapp-code-1">
+    <a class="lightbox-backdrop" href="#projects" aria-label="Close enlarged image"></a>
+    <figure class="lightbox-content">
+      <img src="image/formapp-code-1.png" alt="Form App Java code screenshot enlarged">
+      <a class="lightbox-close" href="#projects">Close</a>
+    </figure>
+  </div>
+
+  <div class="lightbox" id="lightbox-formapp-code-2">
+    <a class="lightbox-backdrop" href="#projects" aria-label="Close enlarged image"></a>
+    <figure class="lightbox-content">
+      <img src="image/formapp-code-2.png" alt="Form App Java code screenshot enlarged">
+      <a class="lightbox-close" href="#projects">Close</a>
+    </figure>
+  </div>
+
+  <div class="lightbox" id="lightbox-expense-tracker-1">
+    <a class="lightbox-backdrop" href="#projects" aria-label="Close enlarged image"></a>
+    <figure class="lightbox-content">
+      <img src="image/expense-tracker-1.png" alt="Expense Tracker dashboard screenshot enlarged">
+      <a class="lightbox-close" href="#projects">Close</a>
+    </figure>
+  </div>
+
+  <div class="lightbox" id="lightbox-expense-tracker-2">
+    <a class="lightbox-backdrop" href="#projects" aria-label="Close enlarged image"></a>
+    <figure class="lightbox-content">
+      <img src="image/expense-tracker-2.png" alt="Expense Tracker transactions screenshot enlarged">
+      <a class="lightbox-close" href="#projects">Close</a>
+    </figure>
   </div>
 </body>
 </html>
